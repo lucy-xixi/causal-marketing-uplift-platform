@@ -1,0 +1,23 @@
+# Causal Marketing Uplift Platform — default configuration
+# Override values per environment or experiment in configs/experiments/
+
+project:
+  name: causal-marketing-uplift-platform
+  seed: 42
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  reports: reports
+
+data:
+  treatment_column: treatment
+  outcome_column: conversion
+  customer_id_column: customer_id
+
+campaign:
+  name: fintech_credit_marketing
+  channels:
+    - email
+    - sms
+    - push
